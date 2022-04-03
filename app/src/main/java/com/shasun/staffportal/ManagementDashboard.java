@@ -60,7 +60,7 @@ import webservice.WebService;
         Intent intent = new Intent(ManagementDashboard.this, tabbedmanagementdashboard.class);
         switch(v.getId()){
             case R.id.mdbcurrentadmission:
-                intent = new Intent(ManagementDashboard.this, BarChartActivity.class);
+                intent = new Intent(ManagementDashboard.this, AdmissionCurrentYearBarChart.class);
                 //intent = new Intent(ManagementDashboard.this, AdmissionCurrentYearBarChart.class);
                 intent.putExtra("ClickedId",0);
                 intent.putExtra(Properties.dashboardName,getResources().getString(R.string.mdCurrentAdmission));

@@ -1,85 +1,225 @@
+
 package com.shasun.staffportal;
 
 import android.app.ProgressDialog;
-import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.text.SpannableString;
+import android.text.style.ForegroundColorSpan;
+import android.text.style.RelativeSizeSpan;
+import android.text.style.StyleSpan;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import com.github.mikephil.charting.charts.BarChart;
-import com.github.mikephil.charting.data.BarData;
-import com.github.mikephil.charting.data.BarDataSet;
-import com.github.mikephil.charting.data.BarEntry;
+import com.github.mikephil.charting.animation.Easing;
+import com.github.mikephil.charting.charts.PieChart;
+import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.data.Entry;
+import com.github.mikephil.charting.data.PieData;
+import com.github.mikephil.charting.data.PieDataSet;
+import com.github.mikephil.charting.data.PieEntry;
+import com.github.mikephil.charting.formatter.PercentFormatter;
 import com.github.mikephil.charting.highlight.Highlight;
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
 import com.github.mikephil.charting.utils.ColorTemplate;
+import com.github.mikephil.charting.utils.MPPointF;
 import com.shasun.staffportal.properties.DemoBase;
+import com.shasun.staffportal.properties.Properties;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+
 import java.util.ArrayList;
+
 import webservice.WebService;
 
-public class DeptWiseAdmissionBarChart extends DemoBase implements OnChartValueSelectedListener {
-    private static String strParameters[];
+public class DeptWiseAdmissionBarChart extends DemoBase implements
+        OnChartValueSelectedListener {
+
+    private PieChart chart;
     private static String ResultString = "";
     private int intOfficeId = 0;
-    private ArrayList<String> BarEntryLabels; // = new ArrayList<String>(200);
-    ArrayList<BarEntry> BARENTRY;
-    BarChart chart ;
-    //    ArrayList<BarEntry> BARENTRY ;
-//    ArrayList<String> BarEntryLabels ;
-    BarDataSet Bardataset ;
-    BarData BARDATA ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.admissioncurrentyearbarchart);
-        chart = (BarChart) findViewById(R.id.chart1);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        setContentView(R.layout.activity_pie_chart);
+        TextView tvPageTitle = (TextView) findViewById(R.id.pageTitle);
+        if(getIntent().getExtras() != null) {
+            tvPageTitle.setText(getIntent().getExtras().getString(Properties.dashboardName, ""));
+        } Button btnBack=(Button) findViewById(R.id.button_back);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
+
+        chart = findViewById(R.id.chart1);
+        chart.setUsePercentValues(true);
+        chart.getDescription().setEnabled(false);
+        chart.setExtraOffsets(5, 10, 5, 5);
+
+        chart.setDragDecelerationFrictionCoef(0.95f);
+
+        chart.setCenterTextTypeface(tfLight);
+        chart.setCenterText(generateCenterSpannableText());
+
+        chart.setDrawHoleEnabled(true);
+        chart.setHoleColor(Color.WHITE);
+
+        chart.setTransparentCircleColor(Color.WHITE);
+        chart.setTransparentCircleAlpha(110);
+
+        chart.setHoleRadius(38f);
+        chart.setTransparentCircleRadius(51f);
+
+        chart.setDrawCenterText(true);
+        chart.setDrawEntryLabels(false);
+
+        chart.setRotationAngle(0);
+        // enable rotation of the chart by touch
+        chart.setRotationEnabled(true);
+        chart.setHighlightPerTapEnabled(true);
+        chart.setCenterText("Admission Count");
+
+
+
+        // chart.setUnit(" €");
+        // chart.setDrawUnitsInChart(true);
+
+        // add a selection listener
         chart.setOnChartValueSelectedListener(this);
-        chart.setDrawGridBackground(false);
-        intOfficeId = getIntent().getIntExtra("OfficeId",1);
-        strParameters = new String[]{"int", "officeid", String.valueOf(intOfficeId)};
-        WebService.strParameters = strParameters;
-        WebService.METHOD_NAME = "getDeptWiseAdmission";
-        AsyncCallWS task = new AsyncCallWS();
-        task.execute();
+        String offID = "1";
+        if(getIntent() != null && getIntent().getExtras() != null) {
+            offID = getIntent().getExtras().getString("OfficeId", 1 + "");
+            intOfficeId = Integer.parseInt(offID);
+            WebService.strParameters = new String[]{"int", "officeid", String.valueOf(intOfficeId)};
+            WebService.METHOD_NAME = "getDeptWiseAdmission";
+            AsyncCallWS task = new AsyncCallWS();
+            task.execute();
+        }
+
+
+        chart.animateY(400, Easing.EaseInOutQuad);
+        // chart.spin(2000, 0, 360);
+
+        Legend l = chart.getLegend();
+        l.setVerticalAlignment(Legend.LegendVerticalAlignment.BOTTOM);
+        l.setHorizontalAlignment(Legend.LegendHorizontalAlignment.LEFT);
+        l.setOrientation(Legend.LegendOrientation.VERTICAL);
+        l.setDrawInside(false);
+        l.setXEntrySpace(7f);
+        l.setYEntrySpace(0f);
+        l.setYOffset(0f);
+
+        // entry label styling
+        chart.setEntryLabelColor(Color.WHITE);
+        chart.setEntryLabelTypeface(tfRegular);
+        chart.setEntryLabelTextSize(12f);
     }
+
+    private void setData() {
+
+        PieDataSet dataSet = new PieDataSet(entries, "Admission Count");
+
+        dataSet.setDrawIcons(false);
+
+        dataSet.setSliceSpace(3f);
+        dataSet.setIconsOffset(new MPPointF(0, 40));
+        dataSet.setSelectionShift(5f);
+
+        // add a lot of colors
+
+        ArrayList<Integer> colors = new ArrayList<>();
+
+        for (int c : ColorTemplate.VORDIPLOM_COLORS)
+            colors.add(c);
+
+        for (int c : ColorTemplate.JOYFUL_COLORS)
+            colors.add(c);
+
+        for (int c : ColorTemplate.COLORFUL_COLORS)
+            colors.add(c);
+
+        for (int c : ColorTemplate.LIBERTY_COLORS)
+            colors.add(c);
+
+        for (int c : ColorTemplate.PASTEL_COLORS)
+            colors.add(c);
+
+        colors.add(ColorTemplate.getHoloBlue());
+
+        dataSet.setColors(colors);
+        //dataSet.setSelectionShift(0f);
+
+        PieData data = new PieData(dataSet);
+        data.setValueFormatter(new PercentFormatter());
+        data.setValueTextSize(11f);
+        data.setValueTextColor(Color.WHITE);
+        data.setValueTypeface(tfLight);
+        chart.setData(data);
+
+        // undo all highlights
+        chart.highlightValues(null);
+
+        chart.invalidate();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        //getMenuInflater().inflate(R.menu.pie, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        return true;
+    }
+
 
     @Override
     protected void saveToGallery() {
-
+        saveToGallery(chart, "PieChartActivity");
     }
 
-    public void displayBarChart(){
-        if (BARENTRY.size() == 0) {
-            Toast.makeText(DeptWiseAdmissionBarChart.this, "Response: No Data Found", Toast.LENGTH_LONG).show();
-        } else {
-            Bardataset = new BarDataSet(BARENTRY, "Admission Count");
-           // BARDATA = new BarData(BarEntryLabels, Bardataset);
-            Bardataset.setColors(ColorTemplate.COLORFUL_COLORS);
-            chart.setData(BARDATA);
-            chart.animateY(3000);
-        }
+    private SpannableString generateCenterSpannableText() {
+
+        SpannableString s = new SpannableString("MPAndroidChart\ndeveloped by Philipp Jahoda");
+        s.setSpan(new RelativeSizeSpan(1.7f), 0, 14, 0);
+        s.setSpan(new StyleSpan(Typeface.NORMAL), 14, s.length() - 15, 0);
+        s.setSpan(new ForegroundColorSpan(Color.GRAY), 14, s.length() - 15, 0);
+        s.setSpan(new RelativeSizeSpan(.8f), 14, s.length() - 15, 0);
+        s.setSpan(new StyleSpan(Typeface.ITALIC), s.length() - 14, s.length(), 0);
+        s.setSpan(new ForegroundColorSpan(ColorTemplate.getHoloBlue()), s.length() - 14, s.length(), 0);
+        return s;
     }
 
     @Override
-    public void onValueSelected(Entry e,  Highlight h) {
-//        Intent intent = new Intent(DeptWiseAdmissionBarChart.this, AdmissionCurrentYearBarChart.class);
-//        intent.putExtra("OfficeId",e.getData().toString());
-//        startActivity(intent);
+    public void onValueSelected(Entry e, Highlight h) {
 
-        Toast.makeText(DeptWiseAdmissionBarChart.this, "Value: " + e.getData()
-                + ", DataSet index: " + h.getDataSetIndex() + " Data: " + e.getData(), Toast.LENGTH_LONG).show();
+        if (e == null)
+            return;
+        Log.i("VAL SELECTED",
+                "Value: " + e.getY() + ", index: " + h.getX()
+                        + ", DataSet index: " + h.getDataSetIndex());
     }
 
     @Override
     public void onNothingSelected() {
-
+        Log.i("PieChart", "nothing selected");
     }
 
     private class AsyncCallWS extends AsyncTask<Void, Void, Void> {
@@ -94,7 +234,7 @@ public class DeptWiseAdmissionBarChart extends DemoBase implements OnChartValueS
 
         @Override
         protected Void doInBackground(Void... params) {
-             if (android.os.Debug.isDebuggerConnected())
+            if (android.os.Debug.isDebuggerConnected())
                 android.os.Debug.waitForDebugger();
             ResultString = WebService.invokeWS();
             return null;
@@ -106,19 +246,30 @@ public class DeptWiseAdmissionBarChart extends DemoBase implements OnChartValueS
                 dialog.dismiss();
             }
             try {
-                JSONArray temp = new JSONArray(ResultString.toString());
-                BARENTRY = new ArrayList<>();
-                BarEntryLabels = new ArrayList<String>();
+                JSONObject JSobject = new JSONObject(ResultString.toString());
+                if(JSobject.has("Status") && JSobject.getString("Status").equalsIgnoreCase("Success")) {
+                    JSONArray temp = new JSONArray(JSobject.getString("Data"));
 
-                for (int i = 0; i <= temp.length() - 1; i++) {
+
+                    for (int i = 0; i <= temp.length() - 1; i++) {
                     JSONObject object = new JSONObject(temp.getJSONObject(i).toString());
-                    BarEntryLabels.add(object.getString("program"));
-                    BARENTRY.add(new BarEntry(Float.parseFloat(object.getString("admissioncnt")), i, object.getInt("courseid")));
+                    entries.add(new PieEntry(Float.parseFloat(object.getString("admissioncnt")),object.getString("program") ));
                 }
-                displayBarChart();
-            } catch (Exception e) {
-                System.out.println(e.getMessage());
+                setData();
+                //displayBarChart();
+            }else{
+                Toast.makeText(DeptWiseAdmissionBarChart.this,JSobject.getString("Message"),Toast.LENGTH_LONG).show();
             }
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            Toast.makeText(DeptWiseAdmissionBarChart.this,ResultString,Toast.LENGTH_LONG).show();
         }
+        }
+    }
+    ArrayList<PieEntry> entries = new ArrayList<>();
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
     }
 }
