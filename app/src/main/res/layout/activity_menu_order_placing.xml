@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuOrderPlacing">
+    <include android:id="@+id/header"
+        layout="@layout/pageheaderwithoutrefresh"/>
+    <ListView
+        android:id="@+id/lstmenu1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_alignParentLeft="true"
+        ></ListView>
+    <TextView
+        android:id="@+id/finalline"
+        android:layout_width="match_parent"
+        android:layout_below="@id/lstmenu1"
+        android:layout_height="1dp"
+        android:background="#C0C0C0"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@id/finalline"
+        android:textColor="#000000"
+        android:text="TOTAL AMOUNT"
+        android:gravity="center_horizontal|left"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:textStyle="bold"
+        android:textSize="15dp"></TextView>
+
+    <TextView
+        android:id="@+id/secondTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@id/finalline"
+        android:textColor="#000000"
+        android:gravity="center_horizontal|right"
+        android:layout_alignParentRight="true"
+        android:paddingTop="10dp"
+        android:paddingRight="5dp"
+        android:textStyle="bold"
+        android:textSize="15dp"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/secondTotal"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_height="40dp"
+            android:background="@color/colorblue"
+            android:textColor="#ffffff"
+            android:text="Back"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            ></Button>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:textStyle="bold"
+            ></TextView>
+        <Button
+            android:id="@+id/btnPlaceOrder"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/secondTotal"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_height="40dp"
+            android:background="@color/colorblue"
+            android:textColor="#ffffff"
+            android:text="Place Order"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            ></Button>
+    </LinearLayout>
+</RelativeLayout>
+

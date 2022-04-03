@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.v7.widget.CardView android:layout_width="400dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:layout_margin="8dp"-->
+    <!--app:cardCornerRadius="6dp"-->
+    <!--app:cardElevation="6dp"-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--<ScrollView android:id="@+id/layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:scrollbars="horizontal"-->
+    <!--android:scrollbarStyle="outsideInset"-->
+    <!--android:fillViewport="true"-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto">-->
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayoutInternal"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+    android:layout_marginTop="5dp"
+        android:background="@drawable/btnselector_revarse">
+        <TextView
+            android:id="@+id/txtBreakupDesc"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Break up Desc"
+            android:textColor="@color/colorBlack"
+            android:textSize="16dp"/>
+        <TextView
+            android:id="@+id/txtBreakupId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"/>
+    </RelativeLayout>
+<!--</ScrollView>-->
+
+    <!--</android.support.v7.widget.CardView>-->

@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "385924584280",
+    "firebase_url": "https://shasun-erp-a3721.firebaseio.com",
+    "project_id": "shasun-erp-a3721",
+    "storage_bucket": "shasun-erp-a3721.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:385924584280:android:af8192664bb5b92bdf0b2d",
+        "android_client_info": {
+          "package_name": "com.shasun.staffportal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "385924584280-b72edqlhfktvfvjd1fsgd31qp5k1eq2p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCO51752NVH2yAseCzv0bO1caw0VANbRcs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "385924584280-b72edqlhfktvfvjd1fsgd31qp5k1eq2p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:385924584280:android:90f4e2cc91a0c6b4df0b2d",
+        "android_client_info": {
+          "package_name": "com.shasun.staffportalshasun"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "385924584280-b72edqlhfktvfvjd1fsgd31qp5k1eq2p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCO51752NVH2yAseCzv0bO1caw0VANbRcs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "385924584280-b72edqlhfktvfvjd1fsgd31qp5k1eq2p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

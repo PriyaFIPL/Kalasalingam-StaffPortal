@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+android:layout_height="wrap_content"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_margin="10dp"
+app:cardCornerRadius="@dimen/corner_radious"
+app:cardElevation="10dp"
+xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/btnselector_revarse"
+    android:orientation="horizontal"
+    android:weightSum="10">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            style="@style/StyleManagementGridImage"
+            android:background="@android:color/transparent"
+            android:src="@drawable/m_staff_birthday_app_color" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+
+            <TextView
+                style="@style/lstextInputProfile"
+                android:id="@+id/txtEmployeeName"
+                android:textColor="@color/appColor"
+                />
+
+
+            <TextView
+                style="@style/lstextInputProfile"
+                android:id="@+id/txtDesignation"
+                android:textSize="12sp"
+
+                />
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

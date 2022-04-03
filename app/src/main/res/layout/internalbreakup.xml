@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/breakup_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/pageheaderwithoutrefresh"/>
+    <TextView
+        android:id="@+id/txtPageTitle"
+        style="@style/HeaderTextStyle"
+        android:layout_below="@layout/pageheaderwithoutrefresh"
+        android:layout_marginTop="60dp"
+        android:text="Subject List" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pageHeader"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/txtPageTitle"
+        android:text="Header"
+        android:textColor="@color/appColorText"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/txtExamDate"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pageHeader"
+        android:drawableRight="@drawable/ic_baseline_calendar_month_24"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorBlack"
+        android:hint="Exam Date"
+        android:padding="15dp"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/hdnExamDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/txtExamDate"
+        android:layout_toRightOf="@+id/txtExamDate"
+        android:layout_alignTop="@+id/txtExamDate"
+        android:layout_below="@+id/txtPageTitle"
+        android:visibility="invisible"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBreakUp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtExamDate"
+        android:layout_gravity="left"
+        android:background="@color/colornormal"
+        android:scrollbars="vertical">
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>
+<!--<include android:id="@+id/layPageHeader"-->
+    <!--layout="@layout/page_header"-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android" />-->
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:scrollbars="vertical"-->
+    <!--android:id="@+id/rvBreakUp"-->
+    <!--tools:context=".InternalMarkEntryMain"/>-->

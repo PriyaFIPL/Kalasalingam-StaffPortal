@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/pageheaderwithoutrefresh" />
+
+        <TableLayout
+            android:id="@+id/tbLeaveAvailability"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cardColoro"
+            android:visibility="gone">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:layout_weight="11">
+
+                <TextView
+                    android:id="@+id/txtLeavetype"
+                    style="@style/textLeaveCount"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:text="Leave Type"
+                    android:textColor="@color/colorWhite"></TextView>
+
+                <TextView
+                    android:id="@+id/txtEligibility"
+                    style="@style/textLeaveCount"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:text="Eligibility"
+                    android:textColor="@color/colorWhite"></TextView>
+
+                <TextView
+                    android:id="@+id/txtAvailability"
+                    style="@style/textLeaveCount"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:text="Availability"
+                    android:textColor="@color/colorWhite"></TextView>
+
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:id="@+id/tbAtten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cardColoro"
+            android:visibility="gone">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:layout_weight="11">
+
+                <TextView
+                    android:id="@+id/textFromDate"
+                    style="@style/textLeaveCount"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:text="Date"
+                    android:textColor="@color/colorWhite"></TextView>
+
+                <TextView
+                    android:id="@+id/textLeaveCount"
+                    style="@style/textLeaveCount"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="Leave Count"
+                    android:textColor="@color/colorWhite"></TextView>
+
+                <TextView
+                    android:id="@+id/textODCount"
+
+                    style="@style/textLeaveCount"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="OD Count"
+                    android:textColor="@color/colorWhite"></TextView>
+
+                <TextView
+                    android:id="@+id/textPermissionCount"
+                    style="@style/textLeaveCount"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="Permission Count"
+                    android:textColor="@color/colorWhite"
+
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/textLateCount"
+                    style="@style/textLeaveCount"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="Late Count"
+                    android:textColor="@color/colorWhite"
+
+                    ></TextView>
+
+            </TableRow>
+        </TableLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvLeaveStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layPageHeader"
+            android:layout_gravity="left"
+            android:background="@color/colorWhite"
+            android:scrollbars="vertical"></androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/attenColour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@color/lPreviousDay"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="10dp"
+                android:text="Previous Day" />
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@color/lSelectedDay"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="10dp"
+                android:text="Selected Day" />
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@color/lFutureDay"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="10dp"
+                android:text="Future Day" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/txtNoData"
+        android:text="No Data Found!"></TextView>
+</LinearLayout>

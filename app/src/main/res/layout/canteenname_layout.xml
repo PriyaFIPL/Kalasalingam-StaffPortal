@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="@drawable/btnselector_revarse">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+        <TextView
+            android:id="@+id/tvCanteenName"
+            android:textStyle="normal"
+            android:textSize="16dp"
+            android:textColor="@color/colorBlack"
+            android:padding="10dp"
+            android:gravity="left|center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_navigate_next_24"
+            android:layout_gravity="center_vertical"
+            ></ImageView>
+        <TextView
+            android:id="@+id/tvCanteenId"
+            android:visibility="gone"
+            android:textStyle="normal"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:gravity="left|center_vertical"
+            android:layout_width="50dp"
+            android:layout_height="40dp"/>
+    </TableRow>
+</TableLayout>
+

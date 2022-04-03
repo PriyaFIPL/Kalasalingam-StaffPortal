@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/studentattendance_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/pageheaderwithoutrefresh"/>
+<!--    <TextView-->
+<!--        style="@style/HeaderTextStyle"-->
+<!--        android:layout_below="@layout/pageheaderwithoutrefresh"-->
+<!--        android:layout_marginLeft="@dimen/activity_horizontal_margin"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@color/colorBlack"-->
+<!--        android:text="Timetable"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTTTemplate"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="left"
+        android:background="@color/colornormal"
+
+        android:scrollbars="vertical">
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>
+<!--<include android:id="@+id/layPageHeader"-->
+    <!--layout="@layout/page_header"-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android" />-->
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:scrollbars="vertical"-->
+    <!--android:id="@+id/rvBreakUp"-->
+    <!--tools:context=".InternalMarkEntryMain"/>-->

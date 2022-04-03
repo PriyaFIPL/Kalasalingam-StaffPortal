@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/payperiod_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/page_header"
+        android:id="@+id/layoutpageheader"/>
+    <TextView
+        android:layout_below="@+id/layoutpageheader"
+        android:id="@+id/txtLastUpdatedDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorRed"
+        android:layout_margin="2dp"
+        android:text="Last Updated"
+        android:visibility="visible"
+        android:gravity="center_horizontal"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPayPeriod"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_gravity="left"
+        android:layout_below="@+id/txtLastUpdatedDate"
+        android:background="@color/colornormal"
+        android:scrollbars="vertical">
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

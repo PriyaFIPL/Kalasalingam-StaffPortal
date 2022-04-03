@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        android:orientation="vertical">
+        <include layout="@layout/pageheaderwithoutrefresh"/>
+        <GridLayout
+            android:id="@+id/gridViewmenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:alignmentMode="alignMargins"
+            android:columnCount="3"
+            android:columnOrderPreserved="false"
+            android:background="@color/colorWhite"
+            android:padding="10dp"
+            android:rowCount="5">
+            <!-- ROW 1  -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mdbcurrentadmission"
+                style="@style/StyleHomeGridCardView"
+
+                >
+
+                <LinearLayout
+                    style="@style/StyleHomeGridLayout"
+                    >
+
+                    <ImageView
+                        style="@style/StyleManagementGridImage"
+                        android:src="@drawable/m_current_admission" />
+
+                    <TextView
+                        style="@style/StyleHomeGridText"
+                        android:text="@string/mdCurrentAdmission"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mdbduelist"
+                style="@style/StyleHomeGridCardView"
+
+                >
+
+                <LinearLayout
+                    style="@style/StyleHomeGridLayout"
+                    >
+
+                    <ImageView
+                        style="@style/StyleManagementGridImage"
+                        android:src="@drawable/m_duelist" />
+
+                    <TextView
+                        style="@style/StyleHomeGridText"
+                        android:text="@string/mdDueList"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mdbstaffbirthday"
+                style="@style/StyleHomeGridCardView"
+
+                >
+
+                <LinearLayout
+                    style="@style/StyleHomeGridLayout"
+                    >
+
+                    <ImageView
+                        style="@style/StyleManagementGridImage"
+                        android:src="@drawable/m_staff_birthday" />
+
+                    <TextView
+                        style="@style/StyleHomeGridText"
+                        android:text="@string/mdStaffBirthday"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mdbstaffattendance"
+                style="@style/StyleHomeGridCardView"
+
+                >
+
+                <LinearLayout
+                    style="@style/StyleHomeGridLayout"
+                    >
+
+                    <ImageView
+                        style="@style/StyleManagementGridImage"
+                        android:src="@drawable/m_staff_attendance" />
+
+                    <TextView
+                        style="@style/StyleHomeGridText"
+                        android:text="@string/mdStaffAttendance"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mdbprojecttracker"
+                style="@style/StyleHomeGridCardView"
+
+                >
+
+                <LinearLayout
+                    style="@style/StyleHomeGridLayout"
+                    >
+
+                    <ImageView
+                        style="@style/StyleManagementGridImage"
+                        android:src="@drawable/m_project_tracker" />
+
+                    <TextView
+                        style="@style/StyleHomeGridText"
+                        android:text="@string/mdProjectTracker"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mdbUpcomingEvents"
+                style="@style/StyleHomeGridCardView"
+
+                >
+
+                <LinearLayout
+                    style="@style/StyleHomeGridLayout"
+                    >
+
+                    <ImageView
+                        style="@style/StyleManagementGridImage"
+                        android:src="@drawable/m_upcoming_events" />
+
+                    <TextView
+                        style="@style/StyleHomeGridText"
+                        android:text="@string/mdUpcomingEvents"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mdbhelpdesk"
+                style="@style/StyleHomeGridCardView"
+
+                >
+
+                <LinearLayout
+                    style="@style/StyleHomeGridLayout"
+                    >
+
+                    <ImageView
+                        style="@style/StyleManagementGridImage"
+                        android:src="@drawable/m_help_desk" />
+
+                    <TextView
+                        style="@style/StyleHomeGridText"
+                        android:text="@string/mdHelpDesk"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </GridLayout>
+    </LinearLayout>
+</TableLayout>

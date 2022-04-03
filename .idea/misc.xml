@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable-v24/btnhover.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable-v24/btnhover_green.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable-v24/btnhoverpink.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable-v24/btnnorma_pinkl.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable-v24/btnnormal.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable-v24/btnselector_revarse.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable-v24/btnselector_revarse_pink.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable-v24/cell_shape.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable-v24/grid_corner_radious.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable-v24/image_circle_meroon.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable-v24/m_absentee_count_meroon.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable-v24/m_staff_birthday_app_color.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable/border.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable/btn_info_selector.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable/btnhover.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable/btnnormal.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable/btnselector.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable/btnselector_canteen_menu.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable/button_round_corner_shape.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable/buttonborder.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable/grid_corner_radious_dashboard.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable/ic_baseline_access_time_24.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable/ic_baseline_calendar_month_24.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable/ic_baseline_cancel_presentation_24.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable/ic_baseline_message_24.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable/ic_baseline_navigate_next_24.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable/ic_baseline_new_releases_24.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable/ic_baseline_save_alt_24.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable/ic_baseline_title_24.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable/ic_leave_days_24.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable/ic_leave_reason.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable/ic_leave_thumbs_up_down_24.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable/ic_leave_type_24.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable/image_circle.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/drawable/m_staff_birthday.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/absenteecountlistitem.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/activity_canteen_selection.xml" value="0.182518115942029" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/activity_canteenmenuorder.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/activity_canteenmenuordercart.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/activity_leaveentry.xml" value="0.13697916666666668" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/activity_main_radha.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/activity_personaldetails.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/activity_pie_chart.xml" value="0.16" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/activity_tabbedfacultydashboard.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/activity_tabbedmanagementdashboard.xml" value="0.1816123188405797" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/activity_testing.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/admissioncurrentyearbarchart.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/attendancestaffleavelistitem.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/bithdaylistitem.xml" value="0.1296875" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/canteenname_layout.xml" value="0.182518115942029" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/content_main2.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/enoticeview.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/facultydashboard.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/fragment_notificationview.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/gridlayout_cardview_home_page.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/header.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/homescreencategory.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/homescreenlistitems.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/internalbreakup.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/internalbreakuplistitem.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/internalmarkentrymain.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/internalmarkentrymainlistitem.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/internalmarkentrystudentlist.xml" value="0.22" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/leaveapproval.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/leaveapprovallistitems.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/leaveavailability.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/leaveavailabilitylistitem.xml" value="0.18568840579710144" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/leaveentrylistitem.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/leavestatuslistitem.xml" value="0.17844202898550723" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/managementdashboard.xml" value="0.1816123188405797" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/menu_layout.xml" value="0.11956521739130435" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/notificationforstaffcategorylist.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/notificationforstudentssubjectlist.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/notificationgroupitem.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/notificationlistitems.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/notificationsectionlist.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/notificationsectionlistitem.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/notificationsectionstudentlist.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/notificationstaffcategorylistitem.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/notificationstafflist.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/notificationsubjetlistitem.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/notificationviewlist.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/page_header.xml" value="0.11666666666666667" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/pageheaderwithoutrefresh.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/permissionentry.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/personaldetails_radha.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/profileedit.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/staffbiometriclog.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/stafftimetable.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/studentattendancehourwisecourses.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/studentattendancehourwisecourseslistitem.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/studentattendancestudentlist.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/studentattendancetemplate.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/studentattendancetemplatelistitem.xml" value="0.1816123188405797" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/todaysAbsenteelistitem.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/venuebooking.xml" value="0.182518115942029" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/viewpayslippayperiod.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/layout/viewpayslippayperiodlistitem.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/FirstlineApp/app/src/main/res/menu/main_menu.xml" value="0.19333333333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,166 @@
+<resources>
+    <string name="app_name">Staff Portal</string>
+    <string name="app_login">Login</string>
+    <string name="title_activity_internalbreakup">internalbreakup</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+    <string name="leavealertdialogmsg">Your previous leave application awaits approval</string>
+    <string name="leavealertdialogtitle">Cannot Apply Leave</string>
+    <string name="approvalofficerdialogmsg">Approval Officer Not Assigned. Contact ERP Administrator. </string>
+    <string name="timetablenotfoundmsg">Timetable not found </string>
+    <string name="canteennotfoundmsg">Canteen not found </string>
+    <string name="menuitemsfoundmsg">Menu Items not found </string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_tabbedmanagementdashboard">tabbedmanagementdashboard</string>
+    <string name="title_activity_tabbedfacultydashboard">tabbedfacultydashboard</string>
+    <string name="hyperlink">Leave Availability <a href="https://learntodroid.com"></a></string>
+    <string name="tab_text_1">Admission Status</string>
+    <string name="tab_text_2">Fee Due List</string>
+    <string name="tab_text_3">Staff Birthday List</string>
+    <string name="tab_text_4">Staff Attendance Details</string>
+    <string name="tab_text_5">Grievance Cell</string>
+    <string name="tab_text_6">Project Tracker</string>
+    <string name="tab_text_7">Upcoming Events</string>
+    <string name="tab_text_8">Help Desk</string>
+
+    <string name="FDtab_text_1">Staff Leave</string>
+    <string name="FDtab_text_2">Library Transaction</string>
+    <string name="FDtab_text_3">Absentee Count</string>
+    <string name="FDtab_text_4">Todays Absentee</string>
+    <string name="FDtab_text_5">Project Tracker</string>
+    <string name="FDtab_text_7">Upcoming Events</string>
+    <string name="FDtab_text_6">Staff Birthday</string>
+
+    <!-- Profile Info-->
+    <string name="profileHeader">Profile</string>
+    <string name="pName">Employee Name</string>
+    <string name="pQualification">Qualification</string>
+    <string name="pDivision">Division</string>
+    <string name="pDepartment">Department</string>
+    <string name="pDesignation">Designation</string>
+    <string name="pDOB">Date of Birth</string>
+    <string name="pDOJ">Date of Join</string>
+    <string name="pMobile">Mobile</string>
+    <string name="pEmail">Email</string>
+    <string name="pAddress">Address</string>
+    <string name="pEdit">Edit</string>
+    <string name="pSave">Save</string>
+    <string name="lCancel">Cancel</string>
+
+    <!-- Radha -->
+    <string name="loading">Loading, Please Wait...</string>
+    <string name="lPeriod">Select Leave Period</string>
+    <string name="lType">Select Leave Type</string>
+    <string name="lfromDate">From Date</string>
+    <string name="ltoDate">To Date</string>
+    <string name="lfromSession">From Session</string>
+    <string name="lfromTime">From Time</string>
+    <string name="ltoTime">To Time</string>
+    <string name="ltoSession">To Session</string>
+    <string name="lRemarks">Enter Remarks</string>
+
+    <!-- Leave status -->
+    <string name="lsName">Staff Name</string>
+    <string name="lsDate">Application Date</string>
+    <string name="lsType">Leave Type</string>
+    <string name="lsFromDate">From Date</string>
+    <string name="lsToDate">To Date</string>
+    <string name="lsSession">Session</string>
+    <string name="lsReason">Reason</string>
+    <string name="lsDays">No of Days</string>
+    <string name="lsStatus">Leave Status</string>
+    <string name="lsEligibility">Eligibility</string>
+    <string name="lsAvailability">Availability</string>
+
+    <string name="nMessage">Message</string>
+    <string name="nSentTime">Sent Time</string>
+    <string name="nTitle">Title</string>
+
+    <!-- Login -->
+    <string name="loginTitle">STAFF PORTAL</string>
+    <string name="loginUserName">User Name</string>
+    <string name="loginPassword">Password</string>
+    <string name="loginButton">Login</string>
+    <string name="loginPowered">Powered by</string>
+    <string name="loginCredentials">Login credentials provided by Collage Administrators</string>
+    <string name="loginPermission">Without permission we check</string>
+    <string name="loginSuccess">Successfully Logged In</string>
+    <string name="loginFailed">Login Failed: Not a Valid User Name / Password</string>
+    <string name="loginNoInterNet">You dont have Internet connection</string>
+    <string name="login"></string>
+
+    <!-- Home -->
+    <string name="hProfile">Profile</string>
+    <string name="hLeave">Leave</string>
+    <string name="hWorkForce">Workforce</string>
+    <string name="hAcademic">Academic</string>
+    <string name="hNotification">Notification</string>
+    <string name="hDashboard">MIS Reports</string>
+    <string name="hCanteen">Canteen</string>
+    <string name="hOthers">Others</string>
+    <string name="hLogout">Logout</string>
+
+    <!-- Menu -->
+    <string name="mLeaveManagement">Leave Management</string>
+    <string name="mlStatus">Leave Status</string>
+    <string name="mlEntry">Leave Entry</string>
+    <string name="mPermissionEntry">Permission Entry</string>
+    <string name="mLeaveApproval">Leave Approval</string>
+    <string name="mBiometricLog">Boimetric Log</string>
+    <string name="mPaySlip">Payslip</string>
+    <string name="mMyTimetable">My TimeTable</string>
+    <string name="mStudentAttandance">Student Attendance</string>
+    <string name="mInternalMark">Internal Mark Entry</string>
+    <string name="mCreateAssignment">Create Assignment</string>
+    <string name="mNotificationToStudents">Notification To Students</string>
+    <string name="mNotificationToStaff">Notification To Staff</string>
+    <string name="mNotificationToAll">Notification To All</string>
+    <string name="mNotificationView">Notification View</string>
+    <string name="mENotice">E-Notice View</string>
+    <string name="mManagementDashboard">MIS for Management </string>
+    <string name="mFacultyDashBoard">MIS for Faculty </string>
+    <string name="mVenue">Venue Booking</string>
+    <string name="mCanteenMenu">Canteen Menu Order</string>
+    <string name="responseNoData">Response: No Data Foundr</string>
+    <string name="lastUpdated">Last Updated</string>
+    <!-- Bio Entry-->
+    <string name="bDate">Date</string>
+    <string name="bFirstIn">First In</string>
+    <string name="bLastOut">Last Out</string>
+    <string name="bTotalHours">Total Hrs</string>
+    <string name="regNo">Reg.No</string>
+    <string name="sName">Student Name</string>
+    <string name="empCode">Emp. Code</string>
+    <string name="empName">Employee Name</string>
+
+    <string name="mdCurrentAdmission">Current Admission</string>
+    <string name="mdDueList">Due List</string>
+    <string name="mdStaffBirthday">Staff Birthday</string>
+    <string name="mdStaffAttendance">Staff Attendance</string>
+    <string name="mdProjectTracker">Project Tracker</string>
+    <string name="mdUpcomingEvents">Upcoming Events</string>
+    <string name="mdHelpDesk">Help Desk</string>
+    <string name="mdStaffLeave">Staff Leave</string>
+    <string name="mdLibraryTransaction">Library Transaction</string>
+    <string name="mdAbsenteeCount">Absentee Count</string>
+    <string name="mdTodaysAbsentee">Todays Absentee</string>
+
+    <string name="wsBitrhdayList">getTodayBirthDayListForMgmtandFaculty</string>
+    <string name="wsLeaveDetails">getStaffLeaveDetails</string>
+    <string name="wsAbsenteeCount">getStudentAbsenteeCountAbstractforFaculty</string>
+    <string name="wsTodayAbsentee">getTodayAbsenteesforFaculty</string>
+<string name="aProgram">Program</string>
+<string name="absenteecount">Absentee Count</string>
+<string name="abSN">Student Name</string>
+<string name="abRegN">Register Number</string>
+<string name="abdayorder">Day Order</string>
+<string name="aStudentcount">Student Count</string>
+<string name="aHour">Hour</string>
+
+    <string name="asleavecnt">Leave Count</string>
+    <string name="aslatecnt">Late count</string>
+    <string name="aspermissioncnt">Permission count</string>
+    <string name="asodcnt">OD Count</string>
+
+</resources>

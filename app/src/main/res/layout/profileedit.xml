@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/page_header"/>
+    <ScrollView android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal"
+        android:scrollbarStyle="outsideInset"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:gravity="center_horizontal"
+            >
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/textInputLayoutProfile"
+                android:id="@+id/usernameInputLayout"
+                android:layout_marginTop="10dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/textInputProfile"
+                    android:id="@+id/txtEmployeeName"
+                    android:hint="@string/pName"
+                    android:drawableStart="@drawable/ic_user_person_24"
+                    android:drawableLeft="@drawable/ic_user_person_24"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/textInputLayoutProfile"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/textInputProfile"
+                    android:id="@+id/txtDivision"
+                    android:hint="@string/pDivision"
+                    android:drawableStart="@drawable/p_address"
+                    android:drawableLeft="@drawable/p_address"
+
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/textInputLayoutProfile"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/textInputProfile"
+                    android:id="@+id/txtDesignation"
+                    android:hint="@string/pDesignation"
+                    android:drawableStart="@drawable/p_department_24"
+                    android:drawableLeft="@drawable/p_department_24"
+
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/textInputLayoutProfile"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/textInputProfile"
+                    android:id="@+id/txtDob"
+                    android:hint="@string/pDOB"
+                    android:drawableStart="@drawable/p_dob"
+                    android:drawableLeft="@drawable/p_dob"
+
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/textInputLayoutProfile"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/textInputProfile"
+                    android:id="@+id/txtDoj"
+                    android:hint="@string/pDOJ"
+                    android:drawableStart="@drawable/p_doj"
+                    android:drawableLeft="@drawable/p_doj"
+
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/textInputLayoutProfile"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/textInputProfileEdit"
+                    android:id="@+id/txtQualification"
+                    android:hint="@string/pQualification"
+                    android:drawableStart="@drawable/p_education_24"
+                    android:drawableLeft="@drawable/p_education_24"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/textInputLayoutProfile"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/textInputProfileEdit"
+
+                    android:id="@+id/txtMobile"
+                    android:hint="@string/pMobile"
+                    android:inputType="number"
+                    android:drawableStart="@drawable/p_ic_baseline_phone_android_24"
+                    android:drawableLeft="@drawable/p_ic_baseline_phone_android_24"
+
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/textInputLayoutProfile"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtEmmail"
+                    style="@style/textInputProfileEdit"
+                    android:hint="@string/pEmail"
+                    android:inputType="textEmailAddress"
+                    android:drawableStart="@drawable/p_mail"
+                    android:drawableLeft="@drawable/p_mail"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/textInputLayoutProfile"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/textInputProfileEdit"
+                    android:id="@+id/txtAddress"
+                    android:hint="@string/pAddress"
+                    android:drawableStart="@drawable/p_address"
+                    android:drawableLeft="@drawable/p_address"
+
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+            <Button
+                android:id="@+id/btnSave"
+                android:text="@string/pSave"
+                style="@style/appButton"
+                android:layout_marginBottom="10dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CanteenSelection">
+    <include android:id="@+id/header"
+        layout="@layout/pageheaderwithoutrefresh"/>
+
+    <ListView
+        android:id="@+id/lvCanteenName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:scrollbars="vertical"></ListView>
+
+    <ImageView
+        android:id="@+id/imgMenuImage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvCanteenName"
+        android:layout_gravity="left"></ImageView>
+
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/lvCanteenName"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_marginTop="110dp"-->
+    <!--        android:layout_gravity="left"-->
+    <!--        android:background="@color/colornormal"-->
+    <!--        android:scrollbars="vertical">-->
+    <!--    </androidx.recyclerview.widget.RecyclerView>-->
+</RelativeLayout>

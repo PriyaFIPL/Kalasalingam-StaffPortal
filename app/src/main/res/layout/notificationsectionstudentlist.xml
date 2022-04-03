@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/studentlist_attendance"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/pageHead"
+        layout="@layout/pageheaderwithoutrefresh"/>
+
+<!--    <TableLayout-->
+<!--        android:id="@+id/tblMessage"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/pageHead"-->
+<!--        android:stretchColumns="*">-->
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <EditText-->
+<!--                android:id="@+id/etNotificationMessage"-->
+<!--                android:layout_width="330dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:padding="5dp"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:layout_marginBottom="1dp"-->
+<!--                android:background="@drawable/border"-->
+<!--                android:gravity="bottom"-->
+<!--                android:hint="Enter message"-->
+<!--                android:text="" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btnSend"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_alignBottom="@id/etNotificationMessage"-->
+<!--                android:layout_toRightOf="@+id/etNotificationMessage"-->
+<!--                android:background="@drawable/icon_sendmessage" />-->
+<!--        </TableRow>-->
+<!--    </TableLayout>-->
+    <TableLayout
+        android:id="@+id/layoutInner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pageHead"
+        android:background="@color/colorAccent">
+        <TableRow>
+        <EditText
+            android:id="@+id/etNotificationMessage"
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_column="1"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.9"
+            android:paddingLeft="10dp"
+            android:background="@drawable/border"
+            android:hint="  Enter message"
+            android:text="" />
+        <ImageButton
+            android:id="@+id/btnSend"
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_column="2"
+            android:layout_weight="0.1"
+            android:src="@drawable/ic_baseline_send_24"
+            android:background="@drawable/btnselector"/>
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:id="@+id/tblStudentListHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutInner"
+        android:stretchColumns="*">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorblue">
+
+            <CheckBox
+                android:id="@+id/chkAll"
+                android:layout_width="0dp"
+                android:layout_column="0"
+                android:background="@color/colorblue"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:buttonTint="@color/colorWhite"
+                 />
+            <TextView
+                android:layout_column="1"
+                android:id="@+id/RegisterNo"
+                style="@style/notificationHeaderValue"
+                android:text="@string/regNo"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/StudentName"
+                android:layout_column="2"
+                style="@style/notificationHeaderValue"
+                android:text="@string/sName"
+                ></TextView>
+
+        </TableRow>
+    </TableLayout>
+    <ScrollView
+        android:id="@+id/svStudentList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tblStudentListHeader"
+        android:scrollbars="vertical">
+
+        <TableLayout
+            android:id="@+id/tblStudentList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+        </TableLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_notificationlistitemhtml"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/btnselector_revarse">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/tblNotificationMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/textInputLayoutProfile"
+                            android:id="@+id/usernameInputLayout"
+                            android:layout_marginTop="10dp"
+                            >
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    style="@style/textInputProfile"
+                                    android:id="@+id/txtTitle"
+                                    android:hint="@string/nTitle"
+                                    android:drawableLeft="@drawable/ic_baseline_title_24"
+                                    />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/textInputLayoutProfile"
+                            android:id="@+id/usernameInputLayoutt"
+                            android:layout_marginTop="10dp"
+                            >
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    style="@style/textInputProfile"
+                                    android:id="@+id/txtTime"
+                                    android:hint="@string/nSentTime"
+                                    android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                                    />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/textInputLayoutProfile"
+                            android:id="@+id/usernameInputLayouttm"
+                            android:layout_marginTop="10dp"
+                            >
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    style="@style/textInputProfile"
+                                    android:id="@+id/txtMessage"
+                                    android:hint="@string/nMessage"
+                                    android:drawableLeft="@drawable/ic_baseline_message_24"
+                                    />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+</RelativeLayout>

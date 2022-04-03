@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_notificationlistitemhtml"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<include
+    android:id="@+id/layPageHeader"
+    layout="@layout/pageheaderwithoutrefresh"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tblNotificationMain"
+            android:layout_below="@+id/layPageHeader"
+            android:padding="10dp">
+                <TableRow
+                    android:paddingBottom="20dp"
+                    android:gravity="center_horizontal">
+                        <Button
+                            android:id="@+id/btnNotificationSent"
+                            android:layout_width="320dp"
+                            android:layout_height="wrap_content"
+
+                            android:background="@drawable/btnselector_revarse"
+                            android:text="View Sent Notification"
+                            android:drawableRight="@drawable/ic_baseline_navigate_next_24"
+                            android:drawablePadding="10dp"
+                            android:textColor="@color/colorBlack"/>
+                </TableRow>
+                <TableRow
+                    android:gravity="center_horizontal">
+                        <Button
+                            android:id="@+id/btnNotificationRece"
+                            android:layout_width="320dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btnselector_revarse"
+                            android:text="View Received Notification"
+                            android:textColor="@color/colorBlack"
+                            android:drawableRight="@drawable/ic_baseline_navigate_next_24"
+                            android:drawablePadding="10dp"
+                            />
+                </TableRow>
+        </TableLayout>
+</RelativeLayout>

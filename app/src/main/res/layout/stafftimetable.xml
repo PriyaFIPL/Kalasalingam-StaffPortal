@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_html"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/page_header"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pageHeader"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:text="Header"
+        android:textColor="@color/appColorText"
+        android:padding="5dp"/>
+
+    <ScrollView
+
+        android:id="@+id/svtimetable"
+        android:layout_below="@+id/pageHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="horizontal">
+        <!--android:layout_below="@id/termTitle"-->
+        <HorizontalScrollView
+            android:outlineAmbientShadowColor="@color/colorblue"
+            android:outlineSpotShadowColor="@color/colorblue"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+            <TableLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:stretchColumns="*"
+                android:id="@+id/tblViewTimeTable">
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/svtimetable"
+        android:visibility="gone"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/abbrevation"
+        android:shrinkColumns="*"
+        android:background="@drawable/btnselector_revarse_pink">
+    </TableLayout>
+</RelativeLayout>

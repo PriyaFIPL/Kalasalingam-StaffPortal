@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/imstudentlist_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/pageheaderwithoutrefresh"/>
+    <!--<TextView-->
+        <!--android:id="@+id/txtPageTitle"-->
+        <!--style="@style/HeaderTextStyle"-->
+        <!--android:layout_below="@layout/page_header"-->
+        <!--android:layout_marginLeft="@dimen/activity_horizontal_margin"-->
+        <!--android:layout_marginTop="70dp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:text="Save -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;" />-->
+
+    <ImageButton
+        android:id="@+id/saveButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+android:src="@drawable/ic_baseline_save_alt_24"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <!--<Button-->
+        <!--android:layout_marginTop="70dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:id="@+id/saveButton"-->
+        <!--android:background="@drawable/icon_save"/>-->
+
+    <TableLayout
+        android:id="@+id/tblStudentListHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/saveButton"
+        android:layout_marginTop="10dp"
+        android:stretchColumns="*">
+        <!--android:layout_marginTop="20dp"-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_column="0"
+                android:text="Register No"
+                android:id="@+id/RegisterNo"
+style="@style/notificationHeaderValue"
+                android:background="@color/cardColoro"
+               >
+            </TextView>
+            <TextView
+                android:layout_column="1"
+                android:id="@+id/StudentName"
+                android:text="Student Name"
+                style="@style/notificationHeaderValue"
+                android:background="@color/cardColoro">
+            </TextView>
+            <TextView
+                android:layout_column="2"
+                android:id="@+id/MarkObtained"
+                android:text="Mark    IsAbsent?"
+                style="@style/notificationHeaderValue"
+                android:background="@color/cardColoro">
+            </TextView>
+
+        </TableRow>
+    </TableLayout>
+    <ScrollView
+        android:id="@+id/svStudentList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tblStudentListHeader"
+        android:layout_above="@id/attendanceHeader1"
+        android:scrollbars="vertical">
+        <TableLayout
+            android:id="@+id/tblStudentList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+        </TableLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/attendanceHeader1"
+        android:layout_above="@+id/attendanceHeader2"
+        style="@style/StyleFooder"/>
+    <TextView
+        android:id="@+id/attendanceHeader2"
+        android:layout_alignParentBottom="true"
+        style="@style/StyleFooder" />
+
+</RelativeLayout>
+
+<!--<include android:id="@+id/layPageHeader"-->
+    <!--layout="@layout/page_header"-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android" />-->
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:scrollbars="vertical"-->
+    <!--android:id="@+id/rvBreakUp"-->
+    <!--tools:context=".InternalMarkEntryMain"/>-->

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/pageheaderwithoutrefresh"/>
+
+
+        <ScrollView xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/ScrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_below="@+id/pageHeader"
+            android:fillViewport="true">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/leaveentrylayout"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/txtApprovalOfficer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="To approve by"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/colorblue"
+                    android:textSize="16dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/textInputLayoutLeaveEntry"
+                    android:id="@+id/txtLeavePeriodLayout"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txtApprovalOfficer"
+
+                    >
+
+                    <AutoCompleteTextView
+                        style="@style/textInputLeaveEntry"
+                        android:id="@+id/txtLeavePeriod"
+                        android:drawableRight="@drawable/ic_baseline_expand_circle_down_24"
+                        android:hint="@string/lPeriod"
+                        >
+
+                    </AutoCompleteTextView>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/textInputLayoutLeaveEntry"
+                    android:id="@+id/txtLeaveTypeLayout"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txtLeavePeriodLayout"
+
+                    >
+
+
+
+                    <AutoCompleteTextView
+                        style="@style/textInputLeaveEntry"
+                        android:id="@+id/txtLeaveType"
+                        android:drawableRight="@drawable/ic_baseline_search_24"
+                        android:hint="@string/lType"
+                        >
+
+                    </AutoCompleteTextView>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:id="@+id/txtLeaveAvailability"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLeaveTypeLayout"
+                    android:padding="10dp"
+                    android:text="Leave Availability"
+                    android:textStyle="italic"
+                    android:textColor="@color/colorblue"
+                    android:textSize="14dp"
+                    android:visibility="gone"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/textInputLayoutLeaveEntry"
+                    android:layout_width="match_parent"
+                    android:id="@+id/FromDateLayout"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txtLeaveAvailability"
+
+                    >
+
+                    <AutoCompleteTextView
+                        style="@style/textInputLeaveEntry"
+                        android:id="@+id/FromDate"
+                        android:drawableRight="@drawable/ic_baseline_calendar_month_24"
+                        android:inputType="date"
+                        android:hint="@string/lfromDate"
+                        >
+
+                    </AutoCompleteTextView>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/textInputLayoutLeaveEntry"
+                    android:layout_width="150dp"
+                    android:id="@+id/ToDateLayout"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/FromDateLayout"
+
+                    >
+
+                    <AutoCompleteTextView
+                        style="@style/textInputLeaveEntry"
+                        android:id="@+id/txtFromSession"
+                        android:drawableRight="@drawable/ic_baseline_access_time_24"
+                        android:hint="@string/lfromTime"
+                        android:imeOptions="flagNoExtractUi|actionSearch"
+
+                        >
+
+                    </AutoCompleteTextView>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/textInputLayoutLeaveEntry"
+                    android:layout_width="200dp"
+                    android:id="@+id/ToDateLayoutSession"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/ToDateLayout"
+                    android:layout_alignBottom="@+id/ToDateLayout"
+
+
+                    >
+
+                    <AutoCompleteTextView
+                        style="@style/textInputLeaveEntry"
+                        android:layout_width="fill_parent"
+
+                        android:id="@+id/txtToSession"
+                        android:drawableRight="@drawable/ic_baseline_access_time_24"
+                        android:hint="@string/ltoTime"
+                        android:imeOptions="flagNoExtractUi|actionSearch"
+
+                        >
+
+                    </AutoCompleteTextView>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/LLButton"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/ToDateLayout"
+                    android:weightSum="6"
+                    android:layout_width="match_parent">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/edRemarksLayout"
+                        android:layout_width="0dp"
+                        android:layout_weight="6"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        passwordToggleTint="@color/appColor"
+                        >
+
+                        <AutoCompleteTextView
+                            style="@style/textInputLeaveEntryWithKeyBoard"
+                            android:layout_width="fill_parent"
+                            android:id="@+id/edRemarks"
+                            android:hint="@string/lRemarks"
+                            android:inputType="textMultiLine"
+                            android:maxLines="3"
+                            android:lines="2"
+                            android:overScrollMode="always"
+                            android:scrollbarStyle="insideInset"
+                            >
+                        </AutoCompleteTextView>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <TextView
+                        android:id="@+id/hdnLeavePeriodId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edRemarks"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:id="@+id/hdnFromDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edRemarks"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:id="@+id/hdnToDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edRemarks"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/hdnLeaveTypeId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edRemarks"
+                        android:visibility="gone"/>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btn_SaveEntries"
+                    android:layout_below="@+id/LLButton"
+                    style="@style/appButton"
+                    android:layout_centerHorizontal="true"
+                    android:text="Apply"/>
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

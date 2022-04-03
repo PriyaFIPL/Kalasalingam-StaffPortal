@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hourcourses"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/PageHeader"
+        layout="@layout/page_header"/>
+
+    <TextView
+        android:id="@+id/txtPageTitle"
+        style="@style/HeaderTextStyle"
+        android:layout_below="@layout/pageheaderwithoutrefresh"
+        android:layout_marginTop="60dp"
+        android:text=" Subjects" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCourses"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtPageTitle"
+        android:layout_gravity="left"
+        android:background="@color/colornormal"
+        android:scrollbars="vertical">
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

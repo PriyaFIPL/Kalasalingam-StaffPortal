@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/llist"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    android:layout_weight="10"
+    android:layout_margin="5dp"
+    >
+        <TextView
+            android:id="@+id/txtStaffCategory"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Staff Category"
+            android:textColor="@color/colorBlack"
+            android:padding="5dp"
+            android:textSize="16sp"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_baseline_navigate_next_24"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/txtIds"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textSize="16dp" />
+</LinearLayout>

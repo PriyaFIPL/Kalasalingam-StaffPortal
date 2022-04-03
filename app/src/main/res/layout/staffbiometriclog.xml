@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/staff_biometriclog"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+<include
+    android:id="@+id/layoutpageheader"
+    layout="@layout/page_header"/>
+    <TextView
+        android:layout_below="@+id/layoutpageheader"
+        android:id="@+id/txtLastUpdatedDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorRed"
+        android:layout_margin="2dp"
+        android:text="@string/lastUpdated"
+        android:textSize="@dimen/last_updated"
+        android:visibility="visible"
+        android:gravity="center_horizontal"/>
+
+    <TableLayout
+    android:id="@+id/tblStaffBiometricLogHeader"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/txtLastUpdatedDate"
+    android:layout_marginTop="5dp"
+    android:stretchColumns="*">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_column="0"
+            android:id="@+id/AttendanceDate"
+            android:text="@string/bDate"
+            style="@style/textBioValue">
+        </TextView>
+        <TextView
+            android:layout_column="1"
+            android:id="@+id/FirstIn"
+            android:text="@string/bFirstIn"
+            style="@style/textBioValue">
+        </TextView>
+        <TextView
+            android:layout_column="2"
+            android:id="@+id/LastOut"
+            android:text="@string/bLastOut"
+            style="@style/textBioValue">
+        </TextView>
+        <TextView
+            android:layout_column="3"
+            android:id="@+id/TotalHrs"
+            android:text="@string/bTotalHours"
+            style="@style/textBioValue"
+            >
+        </TextView>
+    </TableRow>
+</TableLayout>
+<ScrollView
+    android:id="@+id/svStaffBiometricList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/tblStaffBiometricLogHeader"
+    android:scrollbars="vertical">
+
+    <TableLayout
+        android:id="@+id/tblStaffAttendanceList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+    </TableLayout>
+</ScrollView>
+</RelativeLayout>
