@@ -189,15 +189,11 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".BarChartActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".PieChartActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
             android:name=".AdmissionCurrentYearBarChart"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".DeptWiseAdmissionBarChart"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
